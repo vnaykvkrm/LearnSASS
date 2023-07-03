@@ -1,6 +1,7 @@
 $light-color:#f4f4f4;
 $primary-color: rgb(15, 13, 13);
 $secondary-color: rgba(137, 9, 75, 0.708);
+$teritiory-color: rgb(255, 0, 0);
 
 *{
     box-sizing: border-box;
@@ -40,6 +41,18 @@ img{
         }
         li{
             padding: 15px;
+        }
+        a{
+            color: white;
+        }
+        a:hover{
+            color: $teritiory-color;
+        }
+        &-content{  // &-content is the shortcut for .showcase-content//
+            height: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
         }
     }
 }
