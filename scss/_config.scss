@@ -1,6 +1,6 @@
 $light-color:#f4f4f4;
-$primary-color: rgb(43, 43, 43);
-$secondary-color: rgba(26, 25, 31, 0.846);
+$primary-color: rgb(36, 36, 36);
+$secondary-color:rgb(249, 123, 188);
 $teritiory-color: rgb(0, 199, 254);
 
 
@@ -14,3 +14,14 @@ $teritiory-color: rgb(0, 199, 254);
         @return #fff;
     }
 }
+
+//set background and text color//
+
+@mixin set-background($color){
+    background-color: $color;
+    color: set-text-color($color);
+}
+
+// margin and padding Classes
+
+$spacemounts:(1,2,3,4,5);
