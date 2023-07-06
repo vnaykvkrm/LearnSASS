@@ -2,3 +2,15 @@ $light-color:#f4f4f4;
 $primary-color: rgb(185, 21, 21);
 $secondary-color: rgba(33, 24, 98, 0.951);
 $teritiory-color: rgb(0, 199, 254);
+
+
+// set color based on background//
+
+@function set-text-color($color){
+    @if(lightness($color)>70){
+        @return #333;
+    }
+    @else{
+        @return #fff;
+    }
+}

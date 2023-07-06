@@ -21,7 +21,7 @@ img{
 }
 .showcase{
     background-color: $primary-color;
-    color: white;
+    color: set-text-color($primary-color);
     height: 500px;
 
     nav{
