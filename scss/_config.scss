@@ -25,3 +25,12 @@ $teritiory-color: rgb(0, 199, 254);
 // margin and padding Classes
 
 $spacemounts:(1,2,3,4,5);
+
+@each $space in $spaceamounts{
+    .m-#{$space}{
+        margin: #{$space}rem;
+    }
+    .my-#{space}{
+        margin: #{$space}rem 0;
+    }
+}
