@@ -5,14 +5,16 @@
     margin: 3px;
 
     &:hover{
+        background-color: $teritiory-color;
         transform: scale(.98);
         cursor: pointer;
     }
 }
 .btn-primary{
     @extend %btn;
-    background-color: $primary-color;
+    background-color: $secondary-color;
 }
 .btn-secondary{
     @extend %btn;
+    background-color: $secondary-color;
 }

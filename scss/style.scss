@@ -20,8 +20,7 @@ img{
     width: 600px;
 }
 .showcase{
-    background-color: $primary-color;
-    color: set-text-color($primary-color);
+    @include set-background($primary-color);
     height: 500px;
 
     nav{
@@ -36,13 +35,16 @@ img{
         li{
             padding: 15px;
         }
+        a{
+            color: set-text-color($primary-color);
+        }
+        a:hover{
+            color: $teritiory-color;
+        }
     }
     a{
         color: white;
         text-decoration: none;
-    }
-    a:hover{
-        color: $teritiory-color;
     }
     &-content{  // &-content is the shortcut for .showcase-content//
         height: 100%;
@@ -58,7 +60,7 @@ img{
         h1{
             font-size: 50px;
             line-height: 1.2;
-            color: $secondary-color;
+            color: $teritiory-color;
         }
         p{
             margin: 20px 0;
